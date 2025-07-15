@@ -18,7 +18,7 @@
 
   
  /* padrao de cor */
-   --hue:hsl(182, 100%, 50%);
+   --hue:185;
   --first-color: hsl(var(--hue), 90%, 50%); /* o HSL define a Matiz, Saturação e Luminosidade e RGBA*/
   --first-color-alt: hsl(var(--hue), 86%, 56%);
   --first-color-light: hsl(var(--hue), 40%, 80%);
