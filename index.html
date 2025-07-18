@@ -1,341 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-    <link rel="stylesheet" href="swiper-bundle.min.css">
-
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
+    <meta name="description"
+        content="CodeFinity - Desenvolvimento de páginas web profissionais para restaurantes e estabelecimentos comerciais">
+    <title>CodeFinity - Páginas Web Profissionais para Restaurantes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    
-    <header class="header" id="header">
-        <nav class="nav_container">
-            <a href="index.html" class="nav__logo">Ariel Souza Silva</a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-
-                    <li class="nav__item">
-                        <a href="index.html" class="button">Início</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="sobre.html" class="nav__link">Sobre</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="portifolio.html" class="nav__link">Portfólio</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="contato.html" class="nav__link">Contato</a>
-                    </li>
-                </ul>
-
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-fill"></i>
-                </div>
+    <!-- Cabeçalho -->
+    <header class="hero">
+        <nav class="container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m18 16 4-4-4-4" />
+                    <path d="m6 8-4 4 4 4" />
+                    <path d="m14.5 4-5 16" />
+                </svg>
+                <span>CodeFinity</span>
             </div>
-
-            <div class="nav__actions">
-                <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class="ri-apps-2-line"></i>
-                </div>
-
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#portfolio" class="nav-link">Serviços</a>
+                <a href="#contact" class="nav-link">Contato</a>
             </div>
         </nav>
+
+        <div class="hero-content container">
+            <h1>Páginas Web Inovadoras para seu Negócio</h1>
+            <p class="hero-subtitle">Transforme a experiência dos seus clientes com soluções digitais, modernas e
+                interativas.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button primary">Fale Conosco</a>
+                <a href="https://portifolio-arielsouzasilva.netlify.app/" class="cta-button secondary">Ver Portfólio</a>
+            </div>
+        </div>
     </header>
 
-    <main class="main">
+    <main>
+        <!-- Seção Sobre -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <h2 class="section-title">Por que escolher a <span>CodeFinity</span>?</h2>
+                <p class="section-subtitle">Soluções digitais personalizadas para o seu grande empreedimento.</p>
 
-        <section class="home section">
-            <div class="home__rectangle">
-                <img src="img/inicil-2.avif" alt="">
-            </div>
+                <div class="features">
+                    <article class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Design Responsivo</h3>
+                        <p>adaptáveis a qualquer dispositivo, garantindo a melhor experiência para seus clientes.</p>
+                    </article>
 
-            <div class="home__container container grid">
-                <div class="home__perfil perfil">
-                    <div class="perfil__content">
-                        <img src="img/perfil.png" alt="image" class="perfil__img">
-                    </div>
+                    <article class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Atualização Instantânea</h3>
+                        <p>Entre em contato e altere preços, itens e promoções com agilidade.</p>
+                    </article>
+
+                    <article class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-whatsapp"></i>
+                        </div>
+                        <h3>Integração com WhatsApp</h3>
+                        <p>Seus clientes podem fazer pedidos diretamente pelo WhatsApp com um clique.</p>
+                    </article>
+
+                    <article class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Relatórios de Acesso</h3>
+                        <p>(EM BREVE) Acompanhe métricas de acesso e comportamento dos clientes.</p>
+                    </article>
                 </div>
+            </div>
+        </section>
 
-                <div class="home__content grid">
-                    <div class="home__data grid">
-                        <h1 class="home__name">Ariel Souza</h1>
+        <!-- Seção Portfólio -->
+        <section id="portfolio" class="portfolio section-padding">
+            <div class="container">
+                <h2 class="section-title">Nossos <span>Trabalhos</span></h2>
+                <p class="section-subtitle">Confira alguns dos cardápios digitais que desenvolvemos</p>
 
-                        <h2 class="home__profession">Desenvolvedor Web & Desenvolvedor Front-End</h2>
+                <div class="portfolio-grid">
+                    <article class="portfolio-item">
+                        <a href="https://steak-house-burguer.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="https://i.ibb.co/SXgMJQ3x/image.png" alt="Cardápio digital Steak Burguer"
+                                loading="lazy">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <h3>STEAK BURGUER</h3>
+                            <p>Cardápio Web completo com categorias de pratos e integração com WhatsApp.</p>
+                            <a href="https://steak-house-burguer.netlify.app/" target="_blank" rel="noopener noreferrer"
+                                class="portfolio-link">Visitar Site <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
 
-                        <div class="home__social">
-                            <a href="https://github.com/ArielN3" target="_blank" class="home__social-link"><i
-                                    class="ri-github-fill"></i></a>
+                    <article class="portfolio-item">
+                        <a href="https://casa-do-hamburguer.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="casas-do-hamburger.png" alt="Cardápio digital Casa do Hamburguer" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <h3>Casa do Hamburguer</h3>
+                            <p>Cardápio Web completo com sistema de pedidos via WhatsApp.</p>
+                            <a href="https://casa-do-hamburguer.netlify.app/" target="_blank" rel="noopener noreferrer"
+                                class="portfolio-link">Visitar Site <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
 
-                            <a href="https://www.linkedin.com/in/ariel-souza-silva-970379357/" target="_blank"
-                                class="home__social-link"><i class="ri-linkedin-box-fill"></i></a>
+                    <article class="portfolio-item">
+                        <a href="https://sabor-e-brasa.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="sabor-brasa.png" alt="Cardápio digital Sabor e Brasa" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <h3>Sabor e Brasa</h3>
+                            <p>Cardápio digital com fotos profissionais e destaque para combos.</p>
+                            <a href="https://sabor-e-brasa.netlify.app/" target="_blank" rel="noopener noreferrer"
+                                class="portfolio-link">Visitar Site <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
 
+                    <article class="portfolio-item">
+                        <a href="https://black-burger.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="black-brugão.png" alt="Cardápio digital Black Burgão" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <h3>Black Burgão</h3>
+                            <p>Cardápio Web moderno com categorias e descrições detalhadas.</p>
+                            <a href="https://black-burger.netlify.app/" target="_blank" rel="noopener noreferrer"
+                                class="portfolio-link">Visitar Site <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <h2 class="section-title">Vamos <span>Conversar</span></h2>
+                <p class="section-subtitle">Entre em contato para solicitar um orçamento ou tirar dúvidas</p>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <a href="https://wa.me/5561981227195" target="_blank" rel="noopener noreferrer">(61)
+                                    98122-7195</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:arieltrabalhos8@gmail.com.br">contato@codefinity.com.br</a>
+                            </div>
                         </div>
                     </div>
 
-                    <a href="pdf/Curriculo-Ariel.pdf" download="" class="home__button button">Baixar
-                        Curriculo</a>
-                </div>
-            </div>
-        </section>
+                    <form action="https://formsubmit.co/arieltrabalhos8@gmail.com" method="POST" class="contact-form"
+                        id="contactForm">
+                        <!-- Campos ocultos para configuração -->
+                        <input type="hidden" name="_captcha" value="false"> <!-- Desabilita CAPTCHA -->
+                        <input type="hidden" name="_next" value="https://code-tinity.netlify.app">
+                        <!-- Página de redirecionamento após envio -->
+                        <input type="hidden" name="_template" value="table"> <!-- Formata o e-mail em tabela -->
 
-        <section class="services section">
-            <h2 class="section__title">Serviços<br>E outros</h2>
-
-
-            <div class="services__container container grid">
-                <article class="services__card">
-                    <i class="ri-code-s-slash-line services__icon"></i>
-                    <h2 class="services__title">Web Developer</h2>
-                    <p class="services__description">Elegantes tipos de designs e interfaces sempre intuitivos e
-                        atendendo a necessidade do usuário final.</p>
-
-                    <button class="services__button button">Saiba mais</button>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class="ri-close-line services__modal-close"></i>
-
-                            <h2 class="services__modal-title">Desenvolvimento Web Personalizado</h2>
-
-<ul class="services__modal-list grid">
-    <li class="services__modal-item">Construção de plataformas digitais sob medida para impulsionar seu negócio</li>
-    
-    <li class="services__modal-item">Design intuitivo e adaptável a todos os dispositivos</li>
-    
-    <li class="services__modal-item">Técnicas de otimização para máxima visibilidade e velocidade</li>
-</ul>
+                        <!-- Campos do formulário (MANTENHA os mesmos nomes 'name') -->
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
-                    </div>
-                </article>
 
-                <article class="services__card">
-                    <i class="ri-pen-nib-line services__icon"></i>
-                    <h2 class="services__title">Web Designer</h2>
-                    <p class="services__description">Interfaces clean e altamente funcionais, focadas na experiência
-                        intuitiva e nas necessidades reais do usuário.</p>
-
-                    <button class="services__button button">Saiba mais</button>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class="ri-close-line services__modal-close"></i>
-
-                            <h2 class="services__modal-title">Designer Web</h2>
-
-                            <ul class="services__modal-list grid">
-                                <li class="services__modal-item">Design de sites profissionais e de alto impacto visual
-                                </li>
-
-                                <li class="services__modal-item">Criação de interfaces intuitivas e responsivas</li>
-
-                            </ul>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
-                    </div>
 
-                </article>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
 
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
 
-                <article class="services__card">
-                    <div class="services__gif-container">
-
-                        <img src="img/gif.gif" alt="GIF animado" class="services__gif">
-
-
-                    </div>
-                </article>
-
-            </div>
-
-        </section>
-
-        <section class="work section">
-            <h2 class="section__title">Meus Projetos<br>Trabalhos Recentes</h2>
-            <div id="cards">
-                <div class="work__container container grid">
-                    <article class="work__card">
-                        <a href="https://casa-do-hamburguer.netlify.app/" target="_blank" class="work__link">
-                            <img src="img/casa-hamburguer.png" alt="image" class="work__img">
-                            <i class="ri-arrow-right-circle-line work__icon"></i>
-                        </a>
-
-                        <h2 class="work__title">Casa do Hambúrguer</h2>
-                        <span class="work__subtitle">Website Design</span>
-                    </article>
-
-                    <article class="work__card">
-                        <a href="https://sabor-e-brasa.netlify.app/" target="_blank" class="work__link">
-                            <img src="img/sabor-e-brasa.png" alt="image" class="work__img">
-                            <i class="ri-arrow-right-circle-line work__icon"></i>
-                        </a>
-
-                        <h2 class="work__title">Sabor e Brasa</h2>
-                        <span class="work__subtitle">Website Design</span>
-                    </article>
-
-                    <article class="work__card">
-                        <a href="https://steak-house-burguer.netlify.app/" target="_blank" class="work__link">
-                            <img src="img/steack-burguer.png" alt="image" class="work__img">
-                            <i class="ri-arrow-right-circle-line work__icon"></i>
-                        </a>
-
-                        <h2 class="work__title">Steak-House-Burger</h2>
-                        <span class="work__subtitle">Website Design</span>
-                    </article>
-
-                    <article class="work__card">
-                        <a href="https://black-burger.netlify.app/" target="_blank" class="work__link">
-                            <img src="img/black-burguer.png" alt="image" class="work__img">
-                            <i class="ri-arrow-right-circle-line work__icon"></i>
-                        </a>
-
-                        <h2 class="work__title">Black Burgão</h2>
-                        <span class="work__subtitle">Website Design</span>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonial section">
-            <h2 class="section__title">
-                Depoimentos<br>
-                Sobre mim
-            </h2>
-
-            <div class="testimonial__container container">
-                <div class="testimonial__swiper swiper">
-                    <div class="swiper-wrapper">
-                        <article class="testimonial__card swiper-slide">
-                            <div class="testimonial__border">
-                                <img src="img/perfil-img-var.webp" alt="image" class="testimonial__img">
-                            </div>
-
-                            <h2 class="testimonial__name">Casa do Hamburguer</h2>
-                            <p class="testimonial__description">Contratei um projeto e os serviços foram de qualidade, o
-                                trabalho entregue é de bom conteúdo, excelente trabalho.</p>
-                        </article>
-
-                        <article class="testimonial__card swiper-slide">
-                            <div class="testimonial__border">
-                                <img src="img/perfil-img-var.webp" alt="image" class="testimonial__img">
-                            </div>
-
-                            <h2 class="testimonial__name">Sabor e Brasa</h2>
-                            <p class="testimonial__description">Contratei um projeto e os serviços foram de qualidade, o
-                                trabalho entregue é de bom conteúdo, excelente trabalho.</p>
-                        </article>
-
-                        <article class="testimonial__card swiper-slide">
-                            <div class="testimonial__border">
-                                <img src="img/perfil-img-var.webp" alt="image" class="testimonial__img">
-                            </div>
-
-                            <h2 class="testimonial__name">Steak-House-Burger</h2>
-                            <p class="testimonial__description">Contratei um projeto e os serviços foram de qualidade, o
-                                trabalho entregue é de bom conteúdo, excelente trabalho.</p>
-                        </article>
-
-                        <article class="testimonial__card swiper-slide">
-                            <div class="testimonial__border">
-                                <img src="img/perfil-img-var.webp" alt="image" class="testimonial__img">
-                            </div>
-
-                            <h2 class="testimonial__name">Black Burgão</h2>
-                            <p class="testimonial__description">Contratei um projeto e os serviços foram de qualidade, o
-                                trabalho entregue é de bom conteúdo, excelente trabalho.
-                            </p>
-                        </article>
-                    </div>
+                        <button type="submit" class="cta-button primary">Enviar Mensagem</button>
+                    </form>
                 </div>
 
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-
-        <section class="contact section">
-            <div class="contact__container container grid">
-                <!-- Título com efeito de digitação -->
-                <h2 class="section__title typewriter">
-                    Vamos falar<br>
-                    <span class="typewriter-line">Sobre o seu projeto?</span>
-                </h2>
-
-                <a href="contato.html" class="contact__button button">Entre em Contato</a>
             </div>
         </section>
     </main>
 
+    <!-- Rodapé -->
     <footer class="footer">
-        <div class="footer__container container grid">
-
-            <div class="footer__content grid">
-
-
-
-                <ul class="footer__links" id="paddin">
-                    <li>
-                        <a href="sobre.html" class="footer__link">Sobre</a>
-                    </li>
-
-                    <li>
-                        <a href="portifolio.html" class="footer__link">Portfólio</a>
-                    </li>
-
-                    <li>
-                        <a href="contato.html" class="footer__link">Contato</a>
-                    </li>
-                </ul>
-
-                <div class="footer__social">
-                    <a href="https://github.com/ArielN3" target="_blank" class="home__social-link"><i
-                            class="ri-github-fill"></i></a>
-
-                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                        <i class="ri-instagram-fill"></i>
-                    </a>
-
-                    <a href="https://wa.me/5561981227195" target="_blank" class="home__social-link">
-                        <i class="ri-whatsapp-fill"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
-                        <i class="ri-linkedin-box-fill"></i>
-                    </a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m18 16 4-4-4-4" />
+                            <path d="m6 8-4 4 4 4" />
+                            <path d="m14.5 4-5 16" />
+                        </svg>
+                        <span>CodeFinity</span>
+                    </div>
+                    <p>Soluções digitais para o seu negócio.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/5561981227195" aria-label="WhatsApp" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                    </div>
                 </div>
 
-                <a href="index.html" class="footer__logo">Ariel Souza Silva</a>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                    </ul>
+                </div>
 
+                <div class="footer-newsletter">
+                    <h3>Receba Novidades</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu melhor email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
             </div>
 
-            <span class="footer__copy">
-                &#169; Ariel Souza. Todos os direitos reservados
-            </span>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> CodeFinity. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-line"></i>
-    </a>
-
-
-
-
-    <script src="js/main.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
